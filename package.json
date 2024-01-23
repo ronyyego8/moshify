@@ -1,0 +1,32 @@
+{
+  "name": "moshify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "htmlnano": "^0.3.0", 
+    "cssnano": "^5.0.7", 
+    "terser": "^5.7.2"   
+  },
+  "parcel": {
+    "extends": "@parcel/config-default",
+    "optimization": {
+      "minify": {
+        "html": {
+          "collapseWhitespace": true,
+          "removeComments": true
+          
+        },
+        "css": true, 
+        "js": true   
+      }
+    }
+  }
+}
